@@ -1,0 +1,9 @@
+dist: groovy
+addons:
+  apt:
+    packages:
+    - ocaml-findlib
+    - liblablgtk3-ocaml-dev
+    - liblablgtksourceview3-ocaml-dev
+
+script: ocamlfind query -format "%v" lablgtk3
